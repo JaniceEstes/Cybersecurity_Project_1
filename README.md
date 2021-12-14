@@ -174,7 +174,7 @@ Here are the specific commands the user will need to run to download and run the
 
 -Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
-  -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Remote%20Users.png
+  -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png
 
 -You must update the playbook to include the username(s) that match your webservers and your ELK server.
   
