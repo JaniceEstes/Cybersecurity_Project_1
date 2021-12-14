@@ -73,7 +73,7 @@ The ELK configuration portion of this playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-github.com/JaniceEstes/Cybersecurity_Project_1/sebp_elk_761.png
+https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/sebp_elk_761.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
