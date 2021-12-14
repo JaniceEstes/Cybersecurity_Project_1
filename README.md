@@ -150,8 +150,9 @@ Here are the specific commands the user will need to run to download and run the
 -Update the /etc/ansible/hosts file:
     -Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
     -[Do not include quotations (" ") in the above configuration]
-    - Follow this step for each webserver to be configured
-    - Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
+    -Follow this step for each webserver to be configured
+    -Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
+    -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Hosts%20File.png
 -Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 -You must update the playbook to include the username(s) that match your webservers and your ELK server.
 
