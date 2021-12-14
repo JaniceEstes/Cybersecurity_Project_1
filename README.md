@@ -197,5 +197,5 @@ Here are the specific commands the user will need to run to download and run the
 
 18. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
 
-  -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
+    -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
 
