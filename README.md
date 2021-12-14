@@ -122,45 +122,49 @@ SSH into the control node and follow the steps below:
 ** Bonus ** 
 Here are the specific commands the user will need to run to download and run the playbook and update the files successfully. 
 
--Navigate to your Ansible container from your Jump Box:
+1. Navigate to your Ansible container from your Jump Box:
  
- -Run:
+2. Run:
+   
    sudo docker ps
  
   -You will see the name of your ansible container (e.g., musing-swanson)
   
-  -Run:
+3. Run:
+   
    sudo docker start [name of your ansible container]
    sudo docker attach [name of your ansible container]
    
--From root, run:
+4. From root, run:
    cd /etc/ansible
    mkdir roles
    mkdir files
 
--Download filebeat onto ansible by running: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
+5. Download filebeat onto ansible by running: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
 
--Download metricbeat onto ansible by running: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
+6. Download metricbeat onto ansible by running: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
 
--Download the filebeat-config.yml file by running: curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
+7. Download the filebeat-config.yml file by running: curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
 
--Download the metricbeat-config.yml file by running: curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml
+8. Download the metricbeat-config.yml file by running: curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml
 
--Run the following to edit configuration files (see below for instructions on what to change):
+9. Run the following to edit configuration files (see below for instructions on what to change):
+   
    cd files
    nano filebeat-config.yml
    nano metricbeat-config.yml
    
--Go through each -config.yml file and update the IP to match that of the ELK server.
+10. Go through each -config.yml file and update the IP to match that of the ELK server.
 
--Download the playbook by running:
+11. Download the playbook by running:
     curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
 
--You must update the hosts file. Run:
+12. You must update the hosts file. Run:
+    
     cd /etc/ansible
     nano hosts
     
--Update the /etc/ansible/hosts file:
+13. Update the /etc/ansible/hosts file:
     
    -Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
     
@@ -172,22 +176,26 @@ Here are the specific commands the user will need to run to download and run the
     
    -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png
 
--Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
+14. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
-  -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png
+   -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png
 
--You must update the playbook to include the username(s) that match your webservers and your ELK server.
+15. You must update the playbook to include the username(s) that match your webservers and your ELK server.
   
   -Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png
--Run the playbook with the following commands:
+
+16. Run the playbook with the following commands:
+    
     cd /etc/ansible/roles
     ansible-playbook elk_plays.yml
     
   -This is what it looks like when the playbook runs successfully: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png
     
--Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
+17. Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. 
 
--Here is what it looks like: 
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
+    -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png
+
+18. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
+
+  -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
 
