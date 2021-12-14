@@ -190,5 +190,5 @@ Here are the specific commands the user will need to run to download and run the
 
 -Here is what it looks like: 
 https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/filebeat%20data%20successful.png
-
+https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/metricbeat%20data%20successful.png
 
