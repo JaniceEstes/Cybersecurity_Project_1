@@ -55,13 +55,10 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | No                  |75.190.75.120         |
-| Web 1    | No                  |75.190.75.120 10.0.0.4|
-|          |                     |10.2.0.4              |
-| Web 2    | No                  |75.190.75.120 10.0.0.4|
-|          |                     |10.2.0.4              |
-| Web 3    | No                  |75.190.75.120 10.0.0.4|
-|          |                     |10.2.0.4              |
-| ELK      | No                  |75.190.75.120 10.0.0.4|
+| Web 1    | No                  |75.190.75.120 10.0.0.4 10.2.0.4  |
+| Web 2    | No                  |75.190.75.120 10.0.0.4 10.2.0.4  |
+| Web 3    | No                  |75.190.75.120 10.0.0.4 10.2.0.4  |
+| ELK      | No                  |75.190.75.120 10.0.0.4           |
 
 ### Elk Configuration
 
