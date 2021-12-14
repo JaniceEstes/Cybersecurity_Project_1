@@ -187,3 +187,8 @@ Here are the specific commands the user will need to run to download and run the
   -This is what it looks like when the playbook runs successfully: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Success%20Running%20Playbook.png
     
 -Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
+
+-Here is what it looks like: 
+https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/filebeat%20data%20successful.png
+
+
