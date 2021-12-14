@@ -38,13 +38,13 @@ The configuration details of each machine may be found below.
 | Web 1    | Server   | 10.0.0.5   | Linux Ubuntu 18.04|
 | Web 2    | Server   | 10.0.0.6   | Linux Ubuntu 18.04|
 | Web 3    | Server   | 10.0.0.8   | Linux Ubuntu 18.04|
-| ELK	     | Monitor  | 10.1.0.4   | Linux Ubuntu 18.04|
+| ELK	     | Monitor  | 10.2.0.4   | Linux Ubuntu 18.04|
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-- Only the ELk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 75.190.75.120
 
 Machines within the network can only be accessed by the Jump Box.
@@ -55,6 +55,12 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | No                  |75.190.75.120         |
+| Web 1    | No                  |75.190.75.120 10.0.0.4|
+|          |                     |10.2.0.4              |
+| Web 2    | No                  |75.190.75.120 10.0.0.4|
+|          |                     |10.2.0.4              |
+| Web 3    | No                  |75.190.75.120 10.0.0.4|
+|          |                     |10.2.0.4              |
 | ELK      | No                  |75.190.75.120 10.0.0.4|
 
 ### Elk Configuration
@@ -73,7 +79,7 @@ The ELK configuration portion of this playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/sebp_elk_761.png
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/sebp_elk_761.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/sebp_elk_761.png></a>
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -94,51 +100,53 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
--Download filebeat and metricbeat .deb files onto your Ansible container. 
+1. Download filebeat and metricbeat .deb files onto your Ansible container. 
 
--Run curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+2. Run curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
 
--Scoll to line 1106 in this configuration file and change the IP to match the IP of your ELK server.
+3. Scoll to line 1106 in this configuration file and change the IP to match the IP of your ELK server.
 
--Do the same at line 1806.
+  - Do the same at line 1806.
 
--Run curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
+4. Run curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
 
--Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
+  - Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
 
--Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
+5. Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
 
--Update the /etc/ansible/hosts file to include:
+6. Update the /etc/ansible/hosts file to include:
 
-   -"[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
-   -[Do not include quotations (" ") in the above configuration]
-   -Follow this step for each webserver to be configured
-   -Create a group for [elk] within the hosts file and add the IP of the ELK server just as for the webservers, as well as "ansible_python_interpreter=/usr/bin/python3".
+   - "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
+   - Do not include quotations (" ") in the above configuration
+   - Follow this step for each webserver to be configured
+   - Create a group for ELK within the hosts file and add the IP of the ELK server just as for the webservers, as well as "ansible_python_interpreter=/usr/bin/python3".
     
-- Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users", and please update the playbook to include your username.
+7. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users", and please update the playbook to include your username.
 
-- Run the playbook, and navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom and click "Check Data" to check that the filebeat installation worked as expected. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
+8. Run the playbook, and navigate to [http://{IP of your ELK server}/app/kibana#/home/tutorial/systemLogs], scroll to the bottom and click "Check Data" to check that the filebeat installation worked as expected. Then navigate to [http://{IP of your ELK server}/app/kibana#/home/tutorial/systemMetrics], scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
 
-** Bonus ** 
-Here are the specific commands the user will need to run to download and run the playbook and update the files successfully. 
+ 
 
-1. Navigate to your Ansible container from your Jump Box:
+**Here are the specific commands the user will need to run to download and run the playbook and update the files successfully.**
+
+1. Navigate to your Jump Box from you personal workstation:
  
 2. Run:
    
    sudo docker ps
  
-  -You will see the name of your ansible container (e.g., musing-swanson)
+  - You will see the name of your Ansible container (e.g., musing-swanson)
   
 3. Run:
    
-   sudo docker start [name of your ansible container]
-   sudo docker attach [name of your ansible container]
+   - sudo docker start [name of your ansible container]
+   - sudo docker attach [name of your ansible container]
    
-4. From root, run:
-   cd /etc/ansible
-   mkdir roles
-   mkdir files
+4. From Ansible root, run:
+   
+   - cd /etc/ansible
+   - mkdir roles
+   - mkdir files
 
 5. Download filebeat onto ansible by running: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
 
@@ -150,9 +158,9 @@ Here are the specific commands the user will need to run to download and run the
 
 9. Run the following to edit configuration files (see below for instructions on what to change):
    
-   cd files
-   nano filebeat-config.yml
-   nano metricbeat-config.yml
+   - cd files
+   - nano filebeat-config.yml
+   - nano metricbeat-config.yml
    
 10. Go through each -config.yml file and update the IP to match that of the ELK server.
 
@@ -161,41 +169,55 @@ Here are the specific commands the user will need to run to download and run the
 
 12. You must update the hosts file. Run:
     
-    cd /etc/ansible
-    nano hosts
+    - cd /etc/ansible
+    - nano hosts
     
 13. Update the /etc/ansible/hosts file:
     
-   -Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
+   - Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
     
-   -[Do not include quotations (" ") in the above configuration]
+   - Do not include quotations (" ") in the above configuration
     
-   -Follow this step for each webserver to be configured
+   - Follow this step for each webserver to be configured
     
-   -Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
+   - Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server, just as you did for the webservers.
     
-   -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png
+   - Refer to this screenshot for guidance: 
+   
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png></a>
 
 14. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
-   -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png
+   -Here is what the ansible.cfg file looks like: 
+   
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png></a>
 
 15. You must update the playbook to include the username(s) that match your webservers and your ELK server.
   
-  -Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png
+  -Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: 
+
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png></a>
 
 16. Run the playbook with the following commands:
     
-    cd /etc/ansible/roles
-    ansible-playbook elk_plays.yml
+    - cd /etc/ansible/roles
+    - ansible-playbook elk_plays.yml
     
-  -This is what it looks like when the playbook runs successfully: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png
+  -This is what it looks like when the playbook runs successfully:
+  
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png></a>
     
 17. Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. 
 
-    -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png
+    -Here is what it looks like: 
+    
+    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png></a>
 
 18. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
 
     -Here is what it looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
+
+    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
+"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png
+></a>
 
