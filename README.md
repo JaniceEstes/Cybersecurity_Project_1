@@ -100,11 +100,13 @@ SSH into the control node and follow the steps below:
 -Run curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
 -Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
 -Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/all_plays_combined.txt?token=AVPRCBZMW5OM6PLXKSRPCUDBXCJXE > /etc/ansible/roles/elk_plays.yml
+
 -Update the /etc/ansible/hosts file to include:
     -"[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
     -[Do not include quotations (" ") in the above configuration]
     -Follow this step for each webserver to be configured
     -Create a group for [elk] within the hosts file and add the IP of the ELK server just as for the webservers, as well as "ansible_python_interpreter=/usr/bin/python3".
+    
 - Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users", and please update the playbook to include your username.
 
 - Run the playbook, and navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom and click "Check Data" to check that the filebeat installation worked as expected. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
