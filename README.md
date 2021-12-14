@@ -177,6 +177,8 @@ Here are the specific commands the user will need to run to download and run the
   -Here is what the ansible.cfg file looks like: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Remote%20Users.png
 
 -You must update the playbook to include the username(s) that match your webservers and your ELK server.
+  
+  -Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Update%20the%20playbook.png
 
 -Run the playbook with the following commands:
     cd /etc/ansible/roles
