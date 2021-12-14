@@ -93,19 +93,27 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
+
 -Download filebeat and metricbeat .deb files onto your Ansible container. 
+
 -Run curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+
 -Scoll to line 1106 in this configuration file and change the IP to match the IP of your ELK server.
+
 -Do the same at line 1806.
+
 -Run curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
+
 -Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
+
 -Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/all_plays_combined.txt?token=AVPRCBZMW5OM6PLXKSRPCUDBXCJXE > /etc/ansible/roles/elk_plays.yml
 
 -Update the /etc/ansible/hosts file to include:
-    -"[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
-    -[Do not include quotations (" ") in the above configuration]
-    -Follow this step for each webserver to be configured
-    -Create a group for [elk] within the hosts file and add the IP of the ELK server just as for the webservers, as well as "ansible_python_interpreter=/usr/bin/python3".
+
+   -"[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
+   -[Do not include quotations (" ") in the above configuration]
+   -Follow this step for each webserver to be configured
+   -Create a group for [elk] within the hosts file and add the IP of the ELK server just as for the webservers, as well as "ansible_python_interpreter=/usr/bin/python3".
     
 - Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users", and please update the playbook to include your username.
 
@@ -115,10 +123,13 @@ SSH into the control node and follow the steps below:
 Here are the specific commands the user will need to run to download and run the playbook and update the files successfully. 
 
 -Navigate to your Ansible container from your Jump Box:
-    -Run:
+ 
+ -Run:
    sudo docker ps
-    -You will see the name of your ansible container (e.g., musing-swanson)
-    -Run:
+ 
+  -You will see the name of your ansible container (e.g., musing-swanson)
+  
+  -Run:
    sudo docker start [name of your ansible container]
    sudo docker attach [name of your ansible container]
    
@@ -150,12 +161,19 @@ Here are the specific commands the user will need to run to download and run the
     nano hosts
     
 -Update the /etc/ansible/hosts file:
-    -Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
-    -[Do not include quotations (" ") in the above configuration]
-    -Follow this step for each webserver to be configured
-    -Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
-    -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Hosts%20File.png
+    
+   -Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
+    
+   -[Do not include quotations (" ") in the above configuration]
+    
+   -Follow this step for each webserver to be configured
+    
+   -Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
+    
+   -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Hosts%20File.png
+
 -Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
+
 -You must update the playbook to include the username(s) that match your webservers and your ELK server.
 
 -Run the playbook with the following commands:
