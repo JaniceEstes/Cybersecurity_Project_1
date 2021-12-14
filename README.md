@@ -38,7 +38,7 @@ The configuration details of each machine may be found below.
 | Web 1    | Server   | 10.0.0.5   | Linux Ubuntu 18.04|
 | Web 2    | Server   | 10.0.0.6   | Linux Ubuntu 18.04|
 | Web 3    | Server   | 10.0.0.8   | Linux Ubuntu 18.04|
-| ELK	     | Monitor  | 10.2.0.4   | Linux Ubuntu 18.04|
+| ELK	   | Monitor  | 10.2.0.4   | Linux Ubuntu 18.04|
 
 ### Access Policies
 
