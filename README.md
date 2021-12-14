@@ -106,7 +106,7 @@ SSH into the control node and follow the steps below:
 
 -Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
 
--Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/all_plays_combined.txt?token=AVPRCBZMW5OM6PLXKSRPCUDBXCJXE > /etc/ansible/roles/elk_plays.yml
+-Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
 
 -Update the /etc/ansible/hosts file to include:
 
