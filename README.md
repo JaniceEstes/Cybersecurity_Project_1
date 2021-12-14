@@ -2,12 +2,12 @@
 
 The files in this repository were used to configure the network depicted below.
 
-/c/Users/jamie/Desktop/Cybersecurity/Project 1/README/README/Images/ELK_diagram.png
+github.com/JaniceEstes/Cybersecurity_Project_1/ELK_diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the all_plays_combined.yml file may be used to install only certain pieces of it, such as Filebeat.
 The files can be accessed through the JumpBoxProvistioner within the Ansible container.
 
-  - root@79ddf907d916:/etc/ansible/roles/all_plays_combined.yml
+github.com/JaniceEstes/Cybersecurity_Project_1/all_plays_combined.yml
 
 This document contains the following details:
 - Description of the Topology
@@ -38,7 +38,7 @@ The configuration details of each machine may be found below.
 | Web 1    | Server   | 10.0.0.5   | Linux            |
 | Web 2    | Server   | 10.0.0.6   | Linux            |
 | Web 3    | Server   | 10.0.0.8   | Linux            |
-| ELK	   | Monitor  | 10.1.0.4   | Linux            |
+| ELK	     | Monitor  | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -56,7 +56,6 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | No                  |75.190.75.120         |
 | ELK      | No                  |75.190.75.120 10.0.0.4|
-|          |                     |                      |
 
 ### Elk Configuration
 
@@ -74,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-/c/Users/jamie/Desktop/Cybersecurity/Project 1/README/README/Images/sebp_elk_761.png
+github.com/JaniceEstes/Cybersecurity_Project_1/sebp_elk_761.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
