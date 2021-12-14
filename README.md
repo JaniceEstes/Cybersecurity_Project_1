@@ -170,7 +170,7 @@ Here are the specific commands the user will need to run to download and run the
     
    -Create a group for [elk] below the [webservers] group within the hosts file and add the IP of the ELK server just as for the webservers.
     
-   -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Hosts%20File.png
+   -Refer to this screenshot for guidance: https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png
 
 -Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
