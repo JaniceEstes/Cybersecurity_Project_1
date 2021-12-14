@@ -154,7 +154,7 @@ Here are the specific commands the user will need to run to download and run the
 -Go through each -config.yml file and update the IP to match that of the ELK server.
 
 -Download the playbook by running:
-    curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt >    /etc/ansible/roles/elk_plays.yml
+    curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
 
 -You must update the hosts file. Run:
     cd /etc/ansible
