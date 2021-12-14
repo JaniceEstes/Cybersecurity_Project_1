@@ -24,7 +24,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting access to the network.
 
-- Load balancers protect the network from a Denial of Service attack by evenly distributing traffic amont the servers. The advantage of a jump box is the ability to have only one machine that can access the servers within secure networks. It is also a place from which all configurations can be securly made for all machines within all relative networks.
+- Load balancers protect the network from a Denial of Service attack by evenly distributing traffic among the servers. The advantage of a jump box is the ability to have only one machine that can access the servers within secure networks. It is also a place from which all configurations can be securly made for all machines within all relative networks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat watches for and collects log data and new content from within log files.
