@@ -7,7 +7,7 @@ https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_di
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the all_plays_combined.yml file may be used to install only certain pieces of it, such as Filebeat.
 The files can be accessed through the link below.
 
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/all_plays_combined.txt
+https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Ansible/all_plays_combined.txt
 
 This document contains the following details:
 - Description of the Topology
