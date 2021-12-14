@@ -93,8 +93,19 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Run curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+- Scoll to line 1106 in this configuration file and change the IP to match the IP of the ELK server.
+- Do the same at line 1806.
+- Run curl https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/metricbeat-config.yml
+- Make the same IP changes in this file as in the filebeat-config.yml file.
+- Copy the github.com/JaniceEstes/Cybersecurity_Project_1/all_plays_combined.yml file to /etc/ansible/roles.
+- Update the /etc/ansible/hosts file to include:
+    -"[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
+    -[Do not include quotations (" ") in the above configuration]
+    - Follow this step for each webserver to be configured
+    - Create a group for [elk] within the hosts file and add the IP of the ELK server just as for the webservers.
+- Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users", and please update the playbook to include your username.
+
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
