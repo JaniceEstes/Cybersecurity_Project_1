@@ -191,6 +191,8 @@ SSH into the control node and follow the steps below:
 14. You must update the playbook to include the username(s) that match your webservers and your ELK server.
 
   - nano all_plays_combined.yml
+
+  - Go through the playbook and make sure all hosts and remote users match that of your machines. You will need to scroll down to do this thoroughly.
     
   - Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: 
 
