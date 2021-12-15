@@ -1,5 +1,5 @@
 The scripts in this folder have been written for the following assignment, highlighting my ability to use Linux to analyze data and get results.  
-I have inserted screenshots of my results, as well as relevant links, into this assignment. The copyright for this assignment is found at the bottom of this README file.
+I have inserted screenshots of my findings, as well as relevant links, into this assignment. The copyright for this assignment is found at the bottom of this README file.
 
 ## Week 3 Homework: A High Stakes Investigation
 
@@ -72,7 +72,7 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
     - `Lucky_Duck_Investigations`: Contains the investigation directories and notes files you created.
     - `Roulette_Player_WinLoss_0310`: Contains the data for player wins and losses.
 
-[Click Here to View Setup and All Data (Janice Estes)](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/setup_and_casino_data.txt)
+[Click Here to View Setup and All Data (Janice Estes)](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/setup_and_casino_data.txt)
 
 2. The `Dealer_Schedules_0310` and `Roulette_Player_WinLoss_0310` directories contain the dealer schedules and win/loss player data from the roulette tables during the week of March 10.
 
@@ -82,7 +82,7 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
 
 ** My results for Steps 1 and 2 (Janice Estes) **
 
-<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png></a>
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/tree_view_of_assignment.png></a>
 
 #### Step 3: Correlating the Evidence
 
@@ -101,7 +101,7 @@ Complete the player analysis.
   
   ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png></a>
 
       - Record in the `Notes_Player_Analysis` file:
 
@@ -112,7 +112,7 @@ Complete the player analysis.
           
   ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Player_Analysis.png></a>
 
 Complete the dealer analysis. 
   1. Navigate to the `Dealer_Analysis` directory.
@@ -124,7 +124,7 @@ Complete the dealer analysis.
 
 ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Preview_Dealer_Schedule.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Preview_Dealer_Schedule.png></a>
 
   3. Using your findings from the player analysis, create a separate script to look at each day and time that you determined losses occurred. Use `awk`, `pipes`, and `grep` to isolate out the following four fields:
 
@@ -140,13 +140,13 @@ Complete the dealer analysis.
    
    ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script1.png></a>
 
   5. Run all of the scripts and append those results to a file called `Dealers_working_during_losses`.
 
    ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Dealers_working_during_losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Dealers_working_during_losses.png></a>
 
   6. Preview your file `Dealers_working_during_losses` and analyze the data.
   
@@ -158,7 +158,7 @@ Complete the dealer analysis.
 
 ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Dealer_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Dealer_Analysis.png></a>
   
 3. Complete the player/employee correlation. 
 
@@ -168,7 +168,7 @@ Complete the dealer analysis.
 
 ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Player_Dealer_Correlation.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Notes_Player_Dealer_Correlation.png></a>
 
 #### Step 4: Scripting Your Tasks
 
@@ -190,13 +190,13 @@ Complete the following tasks:
  
 ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script2.png></a>
 
 3. Test your script on the schedules to confirm it outputs the correct dealer at the time specified.
 
 ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Run_Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Run_Script2.png></a>
 
 #### Bonus
 
@@ -210,11 +210,11 @@ Complete the following tasks:
   
   ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Script3.png></a>
   
    ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Run_Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Run_Script3.png></a>
 
 ---
 
