@@ -80,6 +80,11 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
      
     - Move the files for those days into the directory `Player_Analysis`.
 
+** My results (Janice Estes) **
+
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png></a>
+
+
 #### Step 3: Correlating the Evidence
 
 Your next task is to correlate the large losses from the roulette tables with the dealer schedule. This will help you determine which dealer and player are colluding to steal money from Lucky Duck.
