@@ -101,6 +101,10 @@ Complete the player analysis.
   3. Place those results in a file called `Roulette_Losses`.
 
   4. Preview the file `Roulette_Losses` and analyze the data.
+  
+  ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png></a>
 
       - Record in the `Notes_Player_Analysis` file:
 
