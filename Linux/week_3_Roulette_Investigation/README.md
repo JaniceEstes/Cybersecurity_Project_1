@@ -1,5 +1,5 @@
 The scripts in this folder have been written for the following assignment, highlighting my ability to use Linux to analyze data and get results.  
-I have inserted screenshots of my results into this assignment.
+I have inserted screenshots of my results, as well as relevant links, into this assignment. The copyright for this assignment is found at the bottom of this README file.
 
 ## Week 3 Homework: A High Stakes Investigation
 
@@ -23,8 +23,7 @@ You have just been hired by Lucky Duck Casino as a security analyst.
 
 Lucky Duck Casino has provided you with the following files if required:
 
-  - [Roulette Player Data: Week of March 10](Resources/Roulette_Player_WinLoss_0310.zip)
-  - [Employee Dealer Schedule: Week of March 10](Resources/Dealer_Schedules_0310.zip)
+ 
 
 **Note**: The instructions ask you to set up the files using a `wget` command, but the files are also provided in compressed zip format if the command does not work.
 
@@ -59,8 +58,6 @@ Your first task is to set up directories to prepare for your investigation.
 
     - For example: `Notes_Player_Analysis`
 
-** My results **
-
 #### Step 2: Gathering Evidence
 
 Your next task is to move evidence from the specific days that Lucky Duck experienced heavy losses at the roulette tables.
@@ -75,11 +72,17 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
     - `Lucky_Duck_Investigations`: Contains the investigation directories and notes files you created.
     - `Roulette_Player_WinLoss_0310`: Contains the data for player wins and losses.
 
+[Click Here to View Setup and All Data (Janice Estes)](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/setup_and_casino_data.txt)
+
 2. The `Dealer_Schedules_0310` and `Roulette_Player_WinLoss_0310` directories contain the dealer schedules and win/loss player data from the roulette tables during the week of March 10.
 
      -  Since the losses occurred on March 10, 12, and 15, move the schedules for those days into the directory `Dealer_Analysis`.
      
     - Move the files for those days into the directory `Player_Analysis`.
+
+** My results for Steps 1 and 2 (Janice Estes) **
+
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png></a>
 
 #### Step 3: Correlating the Evidence
 
@@ -95,6 +98,10 @@ Complete the player analysis.
   3. Place those results in a file called `Roulette_Losses`.
 
   4. Preview the file `Roulette_Losses` and analyze the data.
+  
+  ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Analyze%20Roulette%20Losses.png></a>
 
       - Record in the `Notes_Player_Analysis` file:
 
@@ -102,6 +109,10 @@ Complete the player analysis.
         - If there is a certain player that was playing during each of those times.
         - The total count of times this player was playing.
           - **Hint:** Use the `wc` command to find this value.
+          
+  ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png></a>
 
 Complete the dealer analysis. 
   1. Navigate to the `Dealer_Analysis` directory.
@@ -109,6 +120,11 @@ Complete the dealer analysis.
   2. This file contains the dealer schedules for the various Lucky Duck casino games: Blackjack, Roulette, and Texas Hold 'Em.
 
       - Preview the schedule to view the format and to understand how the data is separated.
+
+
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png></a>
 
   3. Using your findings from the player analysis, create a separate script to look at each day and time that you determined losses occurred. Use `awk`, `pipes`, and `grep` to isolate out the following four fields:
 
@@ -120,8 +136,17 @@ Complete the dealer analysis.
       For example, if a loss occurred on March 10 at 2 p.m., you would write one script to find the roulette dealer who was working at that specific day and time.
 
       - **Hint:** You will have many scripts, but only a small change is required for each script.
+   
+   
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png></a>
 
   5. Run all of the scripts and append those results to a file called `Dealers_working_during_losses`.
+
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png></a>
 
   6. Preview your file `Dealers_working_during_losses` and analyze the data.
   
@@ -131,11 +156,19 @@ Complete the dealer analysis.
 
         - How many times the dealer worked when major losses occurred.
 
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png></a>
+  
 3. Complete the player/employee correlation. 
 
    - In the notes file of the `Player_Dealer_Correlation` directory, add a summary of your findings noting the player and dealer you believe are colluding to scam Lucky Duck.
 
     - Make sure to document your specific reasons for this finding.
+
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png></a>
 
 #### Step 4: Scripting Your Tasks
 
@@ -154,8 +187,16 @@ Complete the following tasks:
       - One for the time
 
      **Note:** The argument should be able to accept a.m. or p.m.
+ 
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png></a>
 
 3. Test your script on the schedules to confirm it outputs the correct dealer at the time specified.
+
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png></a>
 
 #### Bonus
 
@@ -165,18 +206,15 @@ Complete the following tasks:
    - Specific date
    - Casino game being played
 
-  **Hint:** The argument does not need to name the specific casino game.
-
-### Submission Guidelines
-
-- Move the following to the `Player_Dealer_Correlation` directory:
-  - All note files
-  - Evidence files:
-    - `Roulette_Losses`
-    - `Dealers_working_during_losses`
-  - Shell script(s)
-
-- Compress the `Player_Dealer_Correlation` folder to a zip file and submit it.
+  **Hint:** The argument does not need to name the specific casino game.  
+  
+  ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png></a>
+  
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png></a>
 
 ---
 
