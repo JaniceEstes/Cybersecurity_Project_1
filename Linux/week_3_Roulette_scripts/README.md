@@ -187,6 +187,10 @@ Complete the following tasks:
       - One for the time
 
      **Note:** The argument should be able to accept a.m. or p.m.
+ 
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png></a>
 
 3. Test your script on the schedules to confirm it outputs the correct dealer at the time specified.
 
