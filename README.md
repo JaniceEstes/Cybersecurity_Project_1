@@ -168,8 +168,7 @@ SSH into the control node and follow the steps below:
     - cd /etc/ansible
     - nano hosts
     
-13. Update the /etc/ansible/hosts file:
-    
+      
    - Under [webservers], include "[IP address of webserver] ansible_python_interpreter=/usr/bin/python3"
     
    - Do not include quotations (" ") in the above configuration
@@ -182,14 +181,14 @@ SSH into the control node and follow the steps below:
    
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Hosts%20File.png></a>
 
-14. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
+13. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
    - nano ansible.cfg
    - Here is what the ansible.cfg file looks like: 
    
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png></a>
 
-15. You must update the playbook to include the username(s) that match your webservers and your ELK server.
+14. You must update the playbook to include the username(s) that match your webservers and your ELK server.
 
   - nano all_plays_combined.yml
     
@@ -197,7 +196,7 @@ SSH into the control node and follow the steps below:
 
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png></a>
 
-16. Run the playbook with the following commands:
+15. Run the playbook with the following commands:
     
     - cd /etc/ansible/roles
     - ansible-playbook all_plays_combined.yml
@@ -206,13 +205,13 @@ SSH into the control node and follow the steps below:
   
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Success%20Running%20Playbook.png></a>
     
-17. Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. 
+16. Navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemLogs, scroll to the bottom of the page, and click "Check Data" to make sure the filebeat installation was successful. 
 
     - Here is what it looks like: 
     
     <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/filebeat%20data%20successful.png></a>
 
-18. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
+17. Then navigate to http://[IP of your ELK server]/app/kibana#/home/tutorial/systemMetrics, scroll to the bottom and click "Check Data" to check that the metricbeat installation worked as expected.
 
     - Here is what it looks like:
 
