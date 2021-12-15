@@ -58,7 +58,9 @@ Your first task is to set up directories to prepare for your investigation.
 
     - For example: `Notes_Player_Analysis`
 
-** My results **
+** My results (Janice Estes) **
+
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png></a>
 
 #### Step 2: Gathering Evidence
 
@@ -81,10 +83,6 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
      -  Since the losses occurred on March 10, 12, and 15, move the schedules for those days into the directory `Dealer_Analysis`.
      
     - Move the files for those days into the directory `Player_Analysis`.
-
-** My results (Janice Estes) **
-
-<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png></a>
 
 
 #### Step 3: Correlating the Evidence
@@ -112,6 +110,8 @@ Complete the player analysis.
         - If there is a certain player that was playing during each of those times.
         - The total count of times this player was playing.
           - **Hint:** Use the `wc` command to find this value.
+          
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png></a>
 
 Complete the dealer analysis. 
   1. Navigate to the `Dealer_Analysis` directory.
