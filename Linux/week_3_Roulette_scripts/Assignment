@@ -59,6 +59,10 @@ Your first task is to set up directories to prepare for your investigation.
 
     - For example: `Notes_Player_Analysis`
 
+** My results **
+
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png></a>
+
 #### Step 2: Gathering Evidence
 
 Your next task is to move evidence from the specific days that Lucky Duck experienced heavy losses at the roulette tables.
