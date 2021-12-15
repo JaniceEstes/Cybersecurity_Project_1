@@ -144,6 +144,10 @@ Complete the dealer analysis.
 
   5. Run all of the scripts and append those results to a file called `Dealers_working_during_losses`.
 
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Dealers_working_during_losses.png></a>
+
   6. Preview your file `Dealers_working_during_losses` and analyze the data.
   
       - Record in the `Notes_Dealer_Analysis` file:
