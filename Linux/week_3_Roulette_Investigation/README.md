@@ -72,7 +72,7 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
     - `Lucky_Duck_Investigations`: Contains the investigation directories and notes files you created.
     - `Roulette_Player_WinLoss_0310`: Contains the data for player wins and losses.
 
-[Click Here to View Setup and All Data (Janice Estes)](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/setup_and_casino_data.txt)
+[Click Here to View Setup and All Data (Janice Estes)](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/setup_and_casino_data.txt)
 
 2. The `Dealer_Schedules_0310` and `Roulette_Player_WinLoss_0310` directories contain the dealer schedules and win/loss player data from the roulette tables during the week of March 10.
 
