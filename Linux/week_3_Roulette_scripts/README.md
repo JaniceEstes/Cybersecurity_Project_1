@@ -156,6 +156,10 @@ Complete the dealer analysis.
 
         - How many times the dealer worked when major losses occurred.
 
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Dealer_Analysis.png></a>
+  
 3. Complete the player/employee correlation. 
 
    - In the notes file of the `Player_Dealer_Correlation` directory, add a summary of your findings noting the player and dealer you believe are colluding to scam Lucky Duck.
