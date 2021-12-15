@@ -112,7 +112,7 @@ Complete the player analysis.
           
   ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png></a>
 
 Complete the dealer analysis. 
   1. Navigate to the `Dealer_Analysis` directory.
