@@ -193,7 +193,6 @@ Complete the following tasks:
   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png></a>
 
 3. Test your script on the schedules to confirm it outputs the correct dealer at the time specified.
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png
 
 ** My Results (Janice Estes) **
   
@@ -207,7 +206,11 @@ https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Ro
    - Specific date
    - Casino game being played
 
-  **Hint:** The argument does not need to name the specific casino game.
+  **Hint:** The argument does not need to name the specific casino game.  
+  
+  ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png></a>
 
 ### Submission Guidelines
 
