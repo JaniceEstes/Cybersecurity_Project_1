@@ -193,6 +193,11 @@ Complete the following tasks:
   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script2.png></a>
 
 3. Test your script on the schedules to confirm it outputs the correct dealer at the time specified.
+https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png
+
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script2.png></a>
 
 #### Bonus
 
