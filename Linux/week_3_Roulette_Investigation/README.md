@@ -1,5 +1,5 @@
 The scripts in this folder have been written for the following assignment, highlighting my ability to use Linux to analyze data and get results.  
-I have inserted screenshots of my results, as well as relevant links, into this assignment. The copyright for this assignment is found at the bottom of this README file.
+I have inserted screenshots of my findings, as well as relevant links, into this assignment. The copyright for this assignment is found at the bottom of this README file.
 
 ## Week 3 Homework: A High Stakes Investigation
 
