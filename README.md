@@ -125,9 +125,9 @@ SSH into the control node and follow the steps below:
 
 **Here are the specific commands the user will need to run to download and run the playbook and update the files successfully.**
 
-1. SSH into your Jump Box from your personal workstation:
+1. SSH into your Jump Box from your personal workstation/physical machine (this is the only machine that should have access to your Jump Box):
  
-2. Run:
+2. To SSH into your Ansible container, run:
    
    sudo docker ps
  
@@ -137,6 +137,9 @@ SSH into the control node and follow the steps below:
    
    - sudo docker start [name of your ansible container]
    - sudo docker attach [name of your ansible container]
+
+   - Here is an example of what this looks like:
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/ssh_ansible_1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/ssh_ansible_1.png></a>
    
 4. From Ansible root, run:
    
