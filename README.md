@@ -184,12 +184,15 @@ SSH into the control node and follow the steps below:
 
 14. Make sure the username for your ELK machine is found within /etc/ansible/ansible.cfg under "remote users".
 
+   - nano ansible.cfg
    - Here is what the ansible.cfg file looks like: 
    
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Remote%20Users.png></a>
 
 15. You must update the playbook to include the username(s) that match your webservers and your ELK server.
-  
+
+  - nano elk_plays.yml
+    
   - Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: 
 
    <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/Update%20the%20playbook.png></a>
@@ -215,3 +218,4 @@ SSH into the control node and follow the steps below:
 
     <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png></a>
 
+***Note: The ELK stack is currently highly vulnerable due it's reliance on Apache and the recent Log4j Zero-Day vulnerability.  It seems that many versions of Logstash are dependent on Log4j, so until this can be mitigated, proceed with caution.*** 
