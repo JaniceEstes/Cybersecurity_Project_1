@@ -108,7 +108,7 @@ SSH into the control node and follow the steps below:
 
   - Make the same IP changes in this file as in the filebeat-config.yml file wherever necessary.
 
-5. Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
+5. Run curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/all_plays_combined.yml
 
 6. Update the /etc/ansible/hosts file to include:
 
@@ -161,7 +161,7 @@ SSH into the control node and follow the steps below:
 10. Go through each -config.yml file and update the IP to match that of the ELK server.
 
 11. Download the playbook by running:
-    curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/elk_plays.yml
+    curl https://raw.githubusercontent.com/JaniceEstes/Cybersecurity_Project_1/main/Ansible/all_plays_combined.txt > /etc/ansible/roles/all_plays_combined.yml
 
 12. You must update the hosts file. Run:
     
@@ -191,7 +191,7 @@ SSH into the control node and follow the steps below:
 
 15. You must update the playbook to include the username(s) that match your webservers and your ELK server.
 
-  - nano elk_plays.yml
+  - nano all_plays_combined.yml
     
   - Here is where you need to confirm your host is correct, and where you need to change the "remote user" name to your own for the ELK server: 
 
@@ -200,7 +200,7 @@ SSH into the control node and follow the steps below:
 16. Run the playbook with the following commands:
     
     - cd /etc/ansible/roles
-    - ansible-playbook elk_plays.yml
+    - ansible-playbook all_plays_combined.yml
     
   - This is what it looks like when the playbook runs successfully:
   
