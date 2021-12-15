@@ -43,7 +43,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the ELk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
+Only the ELk machine and the Jump Box can accept connections from the Internet. Access to these machines is only allowed from the following IP address:
 - 75.190.75.120
 
 Machines within the network can only be accessed by the Jump Box.
