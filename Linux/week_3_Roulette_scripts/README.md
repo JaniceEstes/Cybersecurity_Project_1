@@ -166,6 +166,10 @@ Complete the dealer analysis.
 
     - Make sure to document your specific reasons for this finding.
 
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Dealer_Correlation.png></a>
+
 #### Step 4: Scripting Your Tasks
 
 You manager is impressed with the work you have done so far on the investigation.  
