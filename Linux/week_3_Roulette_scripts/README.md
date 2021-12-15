@@ -121,6 +121,11 @@ Complete the dealer analysis.
 
       - Preview the schedule to view the format and to understand how the data is separated.
 
+
+** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Preview_Dealer_Schedule.png></a>
+
   3. Using your findings from the player analysis, create a separate script to look at each day and time that you determined losses occurred. Use `awk`, `pipes`, and `grep` to isolate out the following four fields:
 
       - Time
