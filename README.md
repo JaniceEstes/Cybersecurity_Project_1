@@ -5,9 +5,8 @@ The files in this repository were used to configure the network depicted below.
 <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png></a>
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the all_plays_combined.yml file may be used to install only certain pieces of it, such as Filebeat.
-The files can be accessed through the link below.
 
-https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Ansible/all_plays_combined.txt
+[Here is the playbook file](https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Ansible/all_plays_combined.txt)
 
 This document contains the following details:
 - Description of the Topology
