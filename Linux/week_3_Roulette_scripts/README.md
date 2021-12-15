@@ -211,6 +211,10 @@ Complete the following tasks:
   ** My Results (Janice Estes) **
   
   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/Script3.png></a>
+  
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png></a>
 
 ### Submission Guidelines
 
