@@ -137,6 +137,8 @@ SSH into the control node and follow the steps below:
    
    - sudo docker start [name of your ansible container]
    - sudo docker attach [name of your ansible container]
+
+   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/ssh_ansible_1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/ssh_ansible_1.png></a>
    
 4. From Ansible root, run:
    
