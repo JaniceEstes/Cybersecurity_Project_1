@@ -110,6 +110,8 @@ Complete the player analysis.
         - The total count of times this player was playing.
           - **Hint:** Use the `wc` command to find this value.
           
+  ** My Results (Janice Estes) **
+  
   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Notes_Player_Analysis.png></a>
 
 Complete the dealer analysis. 
