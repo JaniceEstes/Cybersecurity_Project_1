@@ -136,6 +136,11 @@ Complete the dealer analysis.
       For example, if a loss occurred on March 10 at 2 p.m., you would write one script to find the roulette dealer who was working at that specific day and time.
 
       - **Hint:** You will have many scripts, but only a small change is required for each script.
+   
+   
+   ** My Results (Janice Estes) **
+  
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Script1.png></a>
 
   5. Run all of the scripts and append those results to a file called `Dealers_working_during_losses`.
 
