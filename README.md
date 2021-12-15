@@ -125,7 +125,7 @@ SSH into the control node and follow the steps below:
 
 **Here are the specific commands the user will need to run to download and run the playbook and update the files successfully.**
 
-1. Navigate to your Jump Box from you personal workstation:
+1. Navigate to your Jump Box from your personal workstation:
  
 2. Run:
    
