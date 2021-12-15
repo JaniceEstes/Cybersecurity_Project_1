@@ -216,17 +216,6 @@ Complete the following tasks:
   
   <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/Run_Script3.png></a>
 
-### Submission Guidelines
-
-- Move the following to the `Player_Dealer_Correlation` directory:
-  - All note files
-  - Evidence files:
-    - `Roulette_Losses`
-    - `Dealers_working_during_losses`
-  - Shell script(s)
-
-- Compress the `Player_Dealer_Correlation` folder to a zip file and submit it.
-
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
