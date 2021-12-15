@@ -101,7 +101,7 @@ Complete the player analysis.
   
   ** My Results (Janice Estes) **
   
-  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png"><img src=https://https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png></a>
+  <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_Investigation/Analyze%20Roulette%20Losses.png></a>
 
       - Record in the `Notes_Player_Analysis` file:
 
