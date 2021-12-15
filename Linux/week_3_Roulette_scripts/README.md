@@ -82,7 +82,7 @@ Your next task is to move evidence from the specific days that Lucky Duck experi
 
 ** My results for Steps 1 and 2 (Janice Estes) **
 
-<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/week_3_Roulette_scripts/tree_view_of_assignment.png></a>
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Linux/tree_view_of_assignment.png></a>
 
 #### Step 3: Correlating the Evidence
 
