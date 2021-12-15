@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram.png></a>
+<a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram1.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Diagrams/ELK_network_diagram1.png></a>
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to help recreate the entire deployment pictured above. Alternatively, select portions of the all_plays_combined.yml file may be used to install only certain pieces of it, such as Filebeat.
 
