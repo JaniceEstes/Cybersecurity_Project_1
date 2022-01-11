@@ -222,4 +222,4 @@ SSH into the control node and follow the steps below:
 
     <a href="https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png"><img src=https://github.com/JaniceEstes/Cybersecurity_Project_1/blob/main/Images/metricbeat%20data%20successful.png></a>
 
-***Note: The ELK stack is currently highly vulnerable due it's reliance on Apache and the recent Log4j Zero-Day vulnerability.  It seems that many versions of Logstash are dependent on Log4j, so until this can be mitigated, proceed with caution.*** 
+***Note: The ELK stack can be highly vulnerable due to it's reliance on Apache and because of the recent Log4j vulnerability.  Many versions of Logstash are dependent on Log4j. The vulnerability can be mitigated by tearing down the ELK stack and rebuilding it with the most updated versions available.*** 
